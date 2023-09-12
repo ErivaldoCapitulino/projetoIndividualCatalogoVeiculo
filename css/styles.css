@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1F1F1F;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+}
+
+#vehiclesTotalNumber {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+#input-section,
+#search-section {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 1em;
+}
+
+select {
+  background-color: #fff;
+  color: #333;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#output-section {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+#cilindradas-div,
+#combustivel-div {
+  display: none;
+}
+
+/* Estilos para quando Moto é selecionada */
+#tipo-veiculo option[value="moto"]:checked~#cilindradas-div {
+  display: block;
+}
+
+/* Estilos para quando Carro é selecionado */
+#tipo-veiculo option[value="carro"]:checked~#combustivel-div {
+  display: block;
+}
+
+/* Estilos para quando Moto é selecionada */
+#tipo-veiculo option[value="moto"]:checked~#cilindradas-div,
+#tipo-veiculo option[value="moto"]:checked~#combustivel-div {
+  display: block;
+}
+
+/* Estilos para quando Carro é selecionado */
+#tipo-veiculo option[value="carro"]:checked~#cilindradas-div,
+#tipo-veiculo option[value="carro"]:checked~#combustivel-div {
+  display: none;
+}
+
+#cilindradas-div,
+#combustivel-div {
+  display: none;
+  /* Adicione essa linha para ocultar os campos inicialmente */
+}

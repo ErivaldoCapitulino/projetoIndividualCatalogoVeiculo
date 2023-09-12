@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Veículos</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <h1>Catálogo de Veículos</h1>
+  <div id="vehiclesTotalNumber"></div>
+
+  <div id="input-section">
+
+    <h2>Adicionar Veículo</h2>
+
+    <label for="marca-input">Marca:</label>
+    <input type="text" id="marca-input">
+
+    <label for="modelo-input">Modelo:</label>
+    <input type="text" id="modelo-input">
+
+    <label for="ano-input">Ano:</label>
+    <input type="number" id="ano-input">
+
+    <label for="preco-input">Preço:</label>
+    <input type="number" id="preco-input">
+
+    <label for="tipo-veiculo">Tipo de Veículo:</label>
+    <select id="tipo-veiculo">
+      <option value="moto">Moto</option>
+      <option value="carro">Carro</option>
+    </select>
+
+    <div id="cilindradas-div">
+      <label for="cilindradas-input">Cilindradas:</label>
+      <input type="number" id="cilindradas-input">
+    </div>
+
+    <div id="combustivel-div">
+      <label for="combustivel-input">Tipo de Combustível:</label>
+      <input type="text" id="combustivel-input">
+    </div>
+
+    <button id="botao-adicionar">Adicionar</button>
+
+  </div>
+
+  <div id="search-section">
+
+    <h2>Pesquisar Veículos</h2>
+
+    <label for="marca-pesquisa">Marca:</label>
+    <input type="text" id="marca-pesquisa">
+    <button id="botao-pesquisar">Pesquisar</button>
+    <button id="botao-listar">Listar</button>
+    <button id="botao-editar">Editar</button>
+    <button id="botao-excluir">Excluir</button>
+
+  </div>
+
+  <div id="output-section">
+    <h2>Lista de Veículos</h2>
+    <ul id="veiculo-list"></ul>
+  </div>
+
+  <script src="./controller/Controller.js" type="module"></script>
+
+</body>
+
+</html>
